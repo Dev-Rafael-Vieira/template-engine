@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        title= title
+        style
+            include style.css
+    body
+        div(class="header")
+            a(href="https://pugjs.org/api/getting-started.html") Pug
+                img.logoimg(src= logoimg, alt="pug")
+            div(class="header-right")
+                a(href="/") Conceito
+                a(href="/Comofunciona") Como funciona?
+                a(class="active" href="/Conclusao") Conclusão
+        div.text
+            h1 Conclusão
+            p <strong>O</strong> uso de template engines facilita a criação da camada de 
+                | visualização de dados em uma aplicação. Com eles podemos utilizar recursos 
+                | das linguagens de desenvolvimento para criar páginas HTML, como, estrutura de 
+                | condição, de repetição, herança, etc.<br>
+                | Note que assim como o Python, o Pug se baseia por indentação e espaços em branco. 
+                | Isso significa que não há tags de abertura e fechamento, o que torna o código muito 
+                | mais limpo, organizado e fácil de entender.<br>
+                | Ele permite construir conteúdo dinâmico de forma clean e enxuta, e a única regra 
+                | necessária em seu uso é respeitar o espaçamento entre as tags do HTML, separando 
+                | cada tag por tabulação ou por espaços. 

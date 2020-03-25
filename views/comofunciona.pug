@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        title= title
+        style
+            include style.css
+    body
+        div(class="header")
+            a(href="https://pugjs.org/api/getting-started.html") Pug
+                img.logoimg(src= logoimg, alt="pug")
+            div(class="header-right")
+                a(href="/") Conceito
+                a(class="active" href="/Comofunciona") Como funciona?
+                a(href="/Conclusao") Conclusão
+        div.text
+            h1 Como Funciona uma Template Engine?
+            p <strong>C</strong>omo sabemos, o navegador só consegue “ler” 
+                | informações em HTML e renderizá-las para o usuário. Por isso, 
+                | as template engines “traduzem” o conteúdo dos seus templates para 
+                | código HTML puro os envia para o navegador. É este processo que permite 
+                | que uma template engine exista, já que de nada adiantaria se as páginas 
+                | retornadas por ela não pudessem ser lidas pelos navegadores.
+                | Basicamente, o processo da criação de páginas pelas template 
+                | engines se dá da seguinte forma: <br><br>
+                | *Um template é criado. <br><br>
+                | *Este template é “traduzido” para código HTML e enviado para o navegador. <br><br>
+                | *O navegador apresenta o conteúdo

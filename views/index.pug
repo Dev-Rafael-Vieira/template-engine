@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title= title
+        style
+            include style.css
+    body
+        div(class="header")
+            a(href="https://pugjs.org/api/getting-started.html") Pug
+                img.logoimg(src= logoimg, alt="pug")
+            div(class="header-right")
+                a(class="active" href="/") Conceito
+                a(href="/Comofunciona") Como funciona?
+                a(href="/Conclusao") Conclusão
+        div.text
+            h1 Conceito
+            p <strong>Q</strong>ual desenvolvedor nunca se atrapalhou com as tags do HTML? 
+                | Aquelas dúvidas sempre surgem: “Será que eu fechei aquela div?” 
+                | “Por que será que meu html quebrou?” Para facilitar a vida do desenvolvedor 
+                | front-end é que surgiu o Pug. Ele é um template engine com alto desempenho e rico em 
+                | recursos, implementado com JavaScript para o ecossistema Node.js. <br><br>
+                | Funciona como um 
+                | intermediário entre o Node e o HTML, ou seja, em tempo de execução, o Pug substitui 
+                | as variáveis do projeto por valores atuais e, em seguida, envia a sequência HTML 
+                | resultante para o cliente.
